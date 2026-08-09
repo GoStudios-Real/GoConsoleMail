@@ -1,0 +1,28 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+androidx-activity-compose = "1.9.3"
+androidx-core = "1.13.1"
+lifecycle = "2.8.7"
+composeMultiplatform = "1.7.1"
+androidx-compose = "1.7.2"
+androidx-material = "1.12.0"
+kotlinx-coroutines = "1.9.0"
+kotlinx-serialization = "1.7.3"
+jakarta-mail = "1.6.7"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+jakarta-mail = { module = "com.sun.mail:android-mail", version.ref = "jakarta-mail" }
+android-activation = { module = "com.sun.mail:android-activation", version.ref = "jakarta-mail" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
