@@ -61,7 +61,7 @@ android {
 
     defaultConfig {
         applicationId = "com.gostudios.mail"
-        minSdk = 23
+        minSdk = 31
         targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
@@ -73,9 +73,18 @@ android {
             excludes += "/META-INF/LICENSE.md"
         }
     }
+    signingConfigs {
+        create("release") {
+            storeFile = file("${System.getProperty("user.home")}/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {

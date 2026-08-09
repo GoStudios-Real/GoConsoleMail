@@ -13,13 +13,22 @@ Runs on:
 - Built-in **demo inbox** so the app works everywhere with no account
 - Dark GoConsoleOS theme, Material 3
 
+## Download
+Ready-built binaries (see `dist/` or the GitHub Releases page):
+
+| File | Target |
+|------|--------|
+| `GoConsoleMail.apk` | Android 12+ phones, tablets, **Android TV / Google TV** (sideload) |
+| `GoConsoleMail-windows.zip` | Windows 10/11 — unzip and run `GoConsoleMail.exe` (bundles JVM) |
+
 ## Getting Started
 
 Requires Gradle 8.10+, JDK 17+ and the Android SDK.
 
 ```
-./gradlew :composeApp:assembleDebug    # Android APK -> composeApp/build/outputs/apk/debug/
-./gradlew :composeApp:run              # Desktop app (Windows)
+./gradlew :composeApp:assembleRelease    # signed APK
+./gradlew :composeApp:createDistributable  # Windows app (GoConsoleMail.exe)
+./gradlew :composeApp:run                  # Desktop app (Windows)
 ```
 
 ## Gmail setup
