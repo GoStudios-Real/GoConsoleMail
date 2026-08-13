@@ -1,5 +1,11 @@
 # GoConsoleMail
 
+<p align="center">
+  <img src="assets/banner.svg" alt="GoConsoleMail" width="100%" />
+  <br/>
+  <img src="assets/logo.svg" alt="GoConsoleMail logo" width="280" />
+</p>
+
 A Gmail/IMAP mail client for GoConsoleOS, built with JetBrains Compose Multiplatform (shared UI in Kotlin).
 
 Runs on:
@@ -43,3 +49,13 @@ composeApp/src/jvmCommon    Gmail/IMAP backend (JavaMail) - Android + Desktop
 composeApp/src/androidMain  MainActivity, manifest, TV/leanback config, icons
 composeApp/src/desktopMain  Windows desktop entry point
 ```
+
+---
+
+## License
+
+Copyright © 2026 GoStudios. All rights reserved.
+
+Provided for educational and personal use; redistribution or commercial use requires permission.
+
+**GoConsoleOS™** and the **GoConsoleOS logo** are trademarks of GoStudios. Gmail and Google are trademarks of Google LLC.
